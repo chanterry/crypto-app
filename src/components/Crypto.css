@@ -24,14 +24,12 @@
     width: 300px;
     height: 50px;
     border-radius: 4px;
-    border: none;
-    background-image:
-    linear-gradient(to right, #ac32e4, #7918f2, #4801ff);
-    color: #e2e2e2;
+    border: 2px solid #1E2749;
+    color: #273469;
 }
   
 .coin-input::placeholder{
-    color: #e2e2e2;
+    color: #273469;
 }
 
 .coin-title{
@@ -42,15 +40,23 @@
 }
 
 .coin-title h1{
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
     width: 150px;
+}
+
+#title-bold{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 720px) and (max-width: 1024px){
     .coin-title{
         min-width: 200px;
     }
-    .coin-title h1{
+    .coin-title h1, #title-bold{
         font-size: 14px;
     }
 }
@@ -59,7 +65,7 @@
     .coin-title{
         min-width: 100px;
     }
-    .coin-title h1{
+    .coin-title h1, #title-bold{
         font-size: 12px;
     }
 }
@@ -68,7 +74,7 @@
     .coin-title{
         min-width: 100px;
     }
-    .coin-title h1{
+    .coin-title h1, #title-bold{
         font-size: 11px;
     }
 }
