@@ -55,11 +55,20 @@
     }
 }
 
-@media screen and (max-width: 720px){
+@media screen and (min-width: 480px) and (max-width: 720px){
     .coin-title{
         min-width: 100px;
     }
     .coin-title h1{
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .coin-title{
+        min-width: 100px;
+    }
+    .coin-title h1{
+        font-size: 11px;
     }
 }
