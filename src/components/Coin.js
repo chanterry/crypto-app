@@ -9,8 +9,10 @@ const Coin = ({image, name, symbol, price, volume, priceChange, marketcap}) => {
         <div className='coin-row'>
             <div className='coin'>
                 <img src={image} alt='crypto'></img>
-                <h1>{name}</h1>
-                <p className='coin-symbol'>{symbol}</p>
+                <div>
+                    <h1>{name}</h1>
+                    <p className='coin-symbol'>{symbol}</p>
+                </div>
             </div>
             <div className='coin-data '>
                 <p className='coin-price'>{new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'}).format(price)}</p> 
