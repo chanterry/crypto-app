@@ -9,12 +9,12 @@ function Crypto() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState('');
 
-  const urlAPi = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=200&page=1&sparkline=false'
+  const urlAPI = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=200&page=1&sparkline=false'
 
   // Requête de l'API
   useEffect (() => {
     axios
-        .get(urlAPi)
+        .get(urlAPI)
         .then(res => {
             setCoins(res.data)
         })
@@ -30,8 +30,6 @@ function Crypto() {
   const filterCoins = coins.filter(coin =>
     coin.name.toLowerCase().includes(search.toLowerCase())
   )
-
-
 
   return (
     <div className="coin-app">
